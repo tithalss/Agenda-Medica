@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/editarPerfil.css">
+
+
+    <title>Editar Perfil</title>
+</head>
+<body>
+<nav>
+    <div class="logo-name">
+        <div class="logo-image">
+            <img src="../assets/logo.png" alt="">
+        </div>
+
+        <span class="logo_name">ClínicMed</span>
+    </div>
+
+    <div class="menu-items">
+        <ul class="nav-links">
+            <li><a href="../templates/marcarConsultas.html">
+                <i class="uil uil-files-landscapes"></i>
+                <span class="link-name">Marcar Consulta</span>
+            </a></li>
+            <li><a href="../templates/consultasMarcadas.html">
+                <i class="uil uil-chart"></i>
+                <span class="link-name">Consultas Agendadas</span>
+            </a></li>
+        </ul>
+
+        <ul class="logout-mode">
+            <li><a href="../templates/editarPerfil.html">
+                <i class="uil uil-signout"></i>
+                <span class="link-name">Editar perfil</span>
+            </a></li>
+
+            <li class="mode">
+                <a href="../templates/login.html">
+                    <i class="uil uil-moon"></i>
+                    <span class="link-name">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="">
+    <div class="dash-content">
+        <div class="container">
+            <h1>Editar Perfil</h1>
+            <form action="#" method="POST" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">CNPJ:</label>
+                    <input type="number" id="cnpj" name="cnpj" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">CEP:</label>
+                    <input type="number" id="cep" name="cep" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha Atual:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Nova Senha:</label>
+                    <input type="password" id="new-password" name="confirm-password">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Senha:</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </div>
+
+                <button id="salvarAlteracoes" type="submit" class="btn">Salvar Alterações</button>
+            </form>
+        </div>
+        </div>
+</section>
+
+<script src="../dist/editarPerfil.js"></script>
+</body>
+</html>

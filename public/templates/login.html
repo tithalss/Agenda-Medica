@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo</title>
     <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+<div class="accessibility-icons">
+    <i class="fas fa-universal-access" title="Acessibilidade"></i>
+    <i class="fas fa-low-vision" title="Visão reduzida"></i>
+    <i class="fas fa-wheelchair" title="Acessível para cadeirantes"></i>
+</div>
+
 <div class="form">
     <img src="../assets/logo.png" alt="logo" class="logo">
-    <form class="login-form" id="loginForm" action="../templates/home.html">
-        <input type="text" placeholder="email" required name="email" id="email"/>
-        <input type="password" placeholder="senha" required name="senha" id="senha"/>
-        <label for="salvarSenha" class="checkbox-label"><input type="checkbox" id="salvarSenha" name="salvarSenha">Salvar senha</label>
-        <a href="../templates/agendador.html" class="custom-button">Entrar</a>
-        <p class="message">Não possui cadastro? <a href="../templates/formulario.html">Crie uma conta</a></p>
+    <form class="login-form" id="loginForm" action="../templates/marcarConsultas.html">
+        <input type="text" placeholder="Email" required name="email" id="email" aria-label="Email"/>
+
+        <input type="password" placeholder="Senha" required name="senha" id="senha" aria-label="Senha"/>
+        <div class="password-requirements">
+            Sua senha deve conter no mínimo 8 caracteres, incluindo letras e números.
+        </div>
+
+        <label for="salvarSenha" class="checkbox-label">
+            <input type="checkbox" id="salvarSenha" name="salvarSenha">
+            Salvar senha
+        </label>
+
+        <button type="submit" class="custom-button">Entrar</button>
     </form>
 </div>
 </body>
